@@ -15,6 +15,12 @@ app.get('/list', (req, res) => {
     })
 })
 
+app.get('/', (req, res) => {
+    res.json({
+        'status': 'OK'
+    })
+})
+
 
 app.listen(PORT, () => {
     console.log('escutando')
